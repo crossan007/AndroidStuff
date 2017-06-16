@@ -15,15 +15,15 @@ A collection of my Android device knowledge
   *  /dev/block/bootdevice/by-name/fsg
   
   Quick backup script:
-    ```
-    adb shell
-    dd if=/dev/block/bootdevice/by-name/modemst1 of=/sdcard/modemst1-original.img
-    dd if=/dev/block/bootdevice/by-name/modemst2 of=/sdcard/modemst2-original.img
-    dd if=/dev/block/bootdevice/by-name/fsg of=/sdcard/fsg-original.img
-    exit
-    adb pull /sdcard/modemst1-original.img
-    adb pull /sdcard/modemst2-original.img
-    adb pull /sdcard/fsg-original.img
+```
+adb shell
+dd if=/dev/block/bootdevice/by-name/modemst1 of=/sdcard/modemst1-original.img
+dd if=/dev/block/bootdevice/by-name/modemst2 of=/sdcard/modemst2-original.img
+dd if=/dev/block/bootdevice/by-name/fsg of=/sdcard/fsg-original.img
+exit
+adb pull /sdcard/modemst1-original.img
+adb pull /sdcard/modemst2-original.img
+adb pull /sdcard/fsg-original.img
 
-    ```
+```
 
